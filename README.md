@@ -31,3 +31,7 @@ This project involves creating a **simple task management system** where users c
 ## Expected Outcome
 
 A **structured and limited task management system** that enables users to add, review, and filter tasks efficiently while ensuring **clean, well-documented, and maintainable code.**
+
+**Console Log of all and completed tasks**
+
+![console log](./explainer-images/console%20log.png)
