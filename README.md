@@ -3,7 +3,7 @@
 ## Important Prerequisite
 
 1. Before starting this challenge, make sure you have reviewed and corrected your JSL02 project using the provided solution. Your prompts for entering task details should be fully functional and include proper validation checks to ensure accurate user input.
-2. Check the project user stories in your student dashboard, make sure you understand what is required for each feature.
+2. **Check the project user stories in your student dashboard**, make sure you understand what is required for each feature.
 
 ## Overview
 
