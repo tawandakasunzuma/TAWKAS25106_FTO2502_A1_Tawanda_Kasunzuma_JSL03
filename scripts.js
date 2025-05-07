@@ -73,3 +73,16 @@ for (let i = 0; i < 3; i++) {
 = = = = = = = = = = */
 
 alert("There are enough tasks on your board, please check them in the console.");
+
+/* = = = = = = = = = =
+  Display all tasks
+= = = = = = = = = = */
+
+console.log("All tasks:", initialTasks);
+
+/* = = = = = = = = = =
+  Display filtered tasks
+= = = = = = = = = = */
+
+const completedTasks = initialTasks.filter(task => task.status === "done");
+console.log("Completed tasks:", completedTasks);
