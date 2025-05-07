@@ -34,4 +34,19 @@ for (let i = 0; i < 3; i++) {
     alert("Invalid status. Please enter 'todo', 'doing' or 'done'.");
     taskStatus = prompt("Enter task status (todo, doing, done):").trim().toLowerCase();
   }
+
+  // Increment ID
+  id++;
+
+  // Add new task to 'initial tasks' array
+  initialTasks.push(
+    {
+      id: id,
+      title: taskTitle,
+      description: taskDescription,
+      status: taskStatus
+    }
+  )
 }
+
+alert("There are enough tasks on your board, please check them in the console.");
