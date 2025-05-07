@@ -19,3 +19,19 @@ const initialTasks = [
     status: "done",
   },
 ];
+
+let id = 3;
+
+for (let i = 0; i < 3; i++) {
+
+  // Prompts to add new task
+  const taskTitle = prompt("Enter task title:").trim();
+  const taskDescription = prompt("Enter task description:").trim();
+  let taskStatus = prompt("Enter task status (todo, doing, done):").trim().toLowerCase(); 
+
+  // Check validity of taskStatus
+  while (taskStatus !== "todo" && taskStatus !== "doing" && taskStatus !== "done") {
+    alert("Invalid status. Please enter 'todo', 'doing' or 'done'.");
+    taskStatus = prompt("Enter task status (todo, doing, done):").trim().toLowerCase();
+  }
+}
