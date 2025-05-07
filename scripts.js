@@ -1,3 +1,7 @@
+/* = = = = = = = = = =
+  Starter code
+= = = = = = = = = = */
+
 const initialTasks = [
   {
     id: 1,
@@ -20,20 +24,35 @@ const initialTasks = [
   },
 ];
 
+/* = = = = = = = = = =
+  Add new tasks to initial tasks array
+= = = = = = = = = = */
+
 let id = 3;
+let taskNumber = 1;
 
 for (let i = 0; i < 3; i++) {
 
   // Prompts to add new task
-  const taskTitle = prompt("Enter task title:").trim();
-  const taskDescription = prompt("Enter task description:").trim();
-  let taskStatus = prompt("Enter task status (todo, doing, done):").trim().toLowerCase(); 
+  let taskTitle = prompt(`Enter task ${taskNumber} title:`).trim();
+
+  // Handle if user enters nothing
+  while (taskTitle.length < 1) {
+    alert("No task title has been entered.")
+    taskTitle = prompt(`Enter task ${taskNumber} title:`).trim();
+  }
+
+  let taskDescription = prompt(`Enter task ${taskNumber} description:`).trim();
+  let taskStatus = prompt(`Enter task ${taskNumber} status (todo, doing, done):`).trim().toLowerCase();
 
   // Check validity of taskStatus
   while (taskStatus !== "todo" && taskStatus !== "doing" && taskStatus !== "done") {
     alert("Invalid status. Please enter 'todo', 'doing' or 'done'.");
-    taskStatus = prompt("Enter task status (todo, doing, done):").trim().toLowerCase();
+    taskStatus = prompt(`Enter task ${taskNumber} status (todo, doing, done):`).trim().toLowerCase();
   }
+
+  // Increment task number
+  taskNumber++;
 
   // Increment ID
   id++;
@@ -48,5 +67,9 @@ for (let i = 0; i < 3; i++) {
     }
   )
 }
+
+/* = = = = = = = = = =
+  Notify user task limit has been reached
+= = = = = = = = = = */
 
 alert("There are enough tasks on your board, please check them in the console.");
