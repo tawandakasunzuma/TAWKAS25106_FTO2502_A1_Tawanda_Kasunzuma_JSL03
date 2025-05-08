@@ -18,8 +18,7 @@ const initialTasks = [
   {
     id: 3,
     title: "Contribute to Open Source Projects",
-    description:
-      "Gain practical experience and collaborate with others in the software development community",
+    description: "Gain practical experience and collaborate with others in the software development community",
     status: "done",
   },
 ];
@@ -28,7 +27,7 @@ const initialTasks = [
   Add new tasks to initial tasks array
 = = = = = = = = = = */
 
-let id = 3;
+let id = 4;
 let taskNumber = 1;
 
 for (let i = 0; i < 3; i++) {
@@ -54,9 +53,6 @@ for (let i = 0; i < 3; i++) {
   // Increment task number
   taskNumber++;
 
-  // Increment ID
-  id++;
-
   // Add new task to 'initial tasks' array
   initialTasks.push(
     {
@@ -66,6 +62,10 @@ for (let i = 0; i < 3; i++) {
       status: taskStatus
     }
   )
+
+  // Increment ID
+  id++;
+
 }
 
 /* = = = = = = = = = =
